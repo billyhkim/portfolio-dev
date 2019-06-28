@@ -19,15 +19,17 @@ $(function () {
           if (firstName.indexOf(' ') >= 0) {
               firstName = name.split(' ').slice(0, -1).join(' ');
           }
+          var formData = $(form).serialize();
           $.ajax({
               url: $(form).attr('action'),
               type: "POST",
-              data: {
-                  name: name,
-                  subject: subject,
-                  email: email,
-                  message: message
-              },
+              data: formData,
+            //   data: {
+            //       name: name,
+            //       subject: subject,
+            //       email: email,
+            //       message: message
+            //   },
               cache: false,
               success: function () {
                   // Success message
