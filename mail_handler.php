@@ -1,6 +1,6 @@
 <?php
 
-require_once('email_config.php');
+require_once('./email_config.php');
 require_once('./phpmailer/PHPMailer/src/Exception.php');
 require_once('./phpmailer/PHPMailer/src/PHPMailer.php');
 require_once('./phpmailer/PHPMailer/src/SMTP.php');
