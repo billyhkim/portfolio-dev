@@ -59,3 +59,63 @@ a.in-progress{
 .alert-danger li{
     padding:.75rem;
 }
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+    .mobile-landscape {
+        min-height: 390px;
+        height: 0;
+    }
+    .home-arrow {
+        bottom: 25px;
+    }
+    .main-menu ul.navbar-nav {
+        margin-top: 0;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .mobile-landscape {
+        min-height: 420px;
+        height: 0;
+    }
+    .home-arrow {
+        bottom: 25px;
+    }
+    .main-menu ul.navbar-nav {
+        margin-top: 0;
+    }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) { 
+    .mobile-landscape {
+        min-height: 400px;
+        height: 0;
+    }
+    .home-arrow {
+        bottom: 25px;
+    }
+    .main-menu ul.navbar-nav {
+        margin-top: 0;
+    }
+}
