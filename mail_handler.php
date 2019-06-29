@@ -27,9 +27,9 @@ $options = array(
 $mail->smtpConnect($options);
 $mail->From = $_POST['email'];  // sender's email address (shows in "From" field)
 $mail->FromName = $_POST['name'];   // sender's name (shows in "From" field)
-$mail->addAddress('billyhkim.dev@gmail.com', 'First Recipient\'s name');  // Add a recipient (name is optional)
-$mail->addAddress('billson.kim@gmail.com');                        // Add a second recipient
-$mail->addReplyTo($_POST['email']);                          // Add a reply-to address
+$mail->addAddress('billyhkim.dev@gmail.com', 'Billy Kim Dev');  // Add a recipient (name is optional)
+$mail->addAddress('billson.kim@gmail.com');  // Add a second recipient
+$mail->addReplyTo($_POST['email']);  // Add a reply-to address
 //$mail->addCC('cc@example.com');
 //$mail->addBCC('bcc@example.com');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
